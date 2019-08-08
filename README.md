@@ -8,12 +8,14 @@ La idea principal de esta herramienta es ayudar al Pentester a realizar reportes
  
  <br>
 Ver versión de PHP en la consola:
- ```sh
+
+```sh
 php -v
 ```
 
 Ver versión extensiones instaladas en PHP:
- ```sh
+
+```sh
 php -m
 ```
 
