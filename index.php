@@ -21,7 +21,7 @@
 $(document).ready(function () {
     $("#msj").hide();
     getproject();
-    $("#btnsub").click(function(){
+    $("#btnsub").click(function(event){
         event.preventDefault();
         $.ajax({
             type: "POST",
