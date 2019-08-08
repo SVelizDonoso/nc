@@ -12,6 +12,10 @@ if($_POST){
 
 	if ($db->query("INSERT INTO proj (name,desc,idproj,db) VALUES ('$nom','$desc','$code','db/$code.db')")) {
 	    echo "New record created successfully";
+	    if(!is_dir("upload/")){
+                mkdir("upload/",0777);
+              
+            }
 	    if(!is_dir("upload/".$code)){
                 mkdir("upload/".$code, 0777);
               
@@ -28,4 +32,3 @@ if($_POST){
 }
 
 ?>
-
